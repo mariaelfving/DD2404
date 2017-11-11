@@ -1,0 +1,33 @@
+cd      go to directory
+mkdir   create directory
+ls      show content of current directory
+ls -l   show content + list in long format
+rm -R   removes directory and its contents (not recommended, use rmdir?)
+
+cat:
+    cat file1                   prints file1
+    cat file1 file2 > file 3    writes file1+file2 to file3
+more:
+    shows entire text, part by part if long. you cannot scroll back up
+less:
+    like more, only you can scroll up
+head:
+    shows the first 10 lines of text
+tail:
+    shows the last 10 lines of text
+wc:
+    word, line, character, and byte count
+    -c  number of bytes
+    -l  number of lines
+    -m  number of characters
+    -w  number of words
+grep:
+    grep 'maria' file1          finds all instances of 'maria' in file1
+sort:
+    sort file1                  sorts lines in file1 alfabetically
+    sort -n file1               sorts lines in file1 numerically
+uniq:
+    filter out repeated lines in file
+cut:
+    cut -c 3 file1              extracts character 3 from each lines
+    cut -d : -f 2               cuts at each ':', extracts second field from each line

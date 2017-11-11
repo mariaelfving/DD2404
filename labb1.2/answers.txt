@@ -1,0 +1,19 @@
+1. 7 columns
+
+2. wc -l gpcr.tab
+    gives 29 305 lines
+
+3. grep HUMAN gpcr.tab | grep Human | wc -l
+    gives 2244
+
+4. rev gpcr.tab | cut -d $'\t' -f 1 | rev | sort -n | head
+    gives smallest sequence = 10
+
+5. cut -d $'\t' -f 2 gpcr.tab | cut -d _ -f 2 | sort | uniq | wc -l
+    gives 1290
+
+6. counter=10;
+    for i in $(ls);
+    do ~/Downloads/muscle -in $i -clwout $counter'.aln';
+    counter+=1;
+    done

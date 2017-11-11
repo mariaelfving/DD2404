@@ -1,0 +1,36 @@
+cat - concatenate and print files.
+Reads file, writes to the standard output
+  cat filename
+
+more - provides a way to view large documents
+shows you one page at a time, you cannot go back
+  more filename
+
+less - exactly like more, but with the added
+functionality that you can scroll up
+  less filename
+
+head - display first 10 lines of a file
+  head filename
+
+tail - display the last 10 lines of a file
+  tail filename
+
+wc - word, line, character and byte count
+1 character = 1 byte with 8bit
+  wc filename
+
+grep - file pattern searcher
+  grep "search word" filename
+
+sort - sort line of text files
+  sort filename
+
+uniq - report or filter out repeated lines in a file
+  uniq filename
+
+cut - cut out selected portions of each line of a file
+  cut -c -> cuts on character count
+  cut -d @ -f 2 -> you can set your own
+  delimiter and choose what field to cut
+  cut -d @ -f 2 -s -> only not containing delimiter
