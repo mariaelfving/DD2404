@@ -1,8 +1,6 @@
 import sys
 import fileinput
 
-## HEJ HEJ
-
 def read_file(file_in):
     seq = ''
     for line in file_in:
