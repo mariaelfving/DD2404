@@ -73,7 +73,7 @@ new_group = generate_newgroup(file)
 
 for j in range(0,len(new_group)-1):
     str_list = []
-    pdb.set_trace()
+    #pdb.set_trace()
     output = output+lines[new_group[j]].split(' ')[0].split('\n')[0]+'\n'
     string = ''
     seq = generate_sequence(new_group,lines,j)
@@ -83,7 +83,7 @@ for j in range(0,len(new_group)-1):
     else:
         longest = max(str_list,key=len)
         longest = longest.split('\n')[0]
-        pdb.set_trace()
+        #pdb.set_trace()
         amino = generate_amino(longest,dict_amino)
         output = output+amino+'\n'
 
